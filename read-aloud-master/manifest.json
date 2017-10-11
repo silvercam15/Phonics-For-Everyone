@@ -1,0 +1,150 @@
+{
+  "manifest_version": 2,
+
+  "name": "__MSG_extension_name__",
+  "short_name": "__MSG_extension_short_name__",
+  "description": "__MSG_extension_description__",
+  "version": "0.2.16",
+  "default_locale": "en",
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tts",
+    "storage",
+    "ttsEngine",
+    "contextMenus",
+    "https://support.lsdsoftware.com/"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources": [
+    "js/pdf.worker.js"
+  ],
+  "background": {
+    "scripts": [
+      "js/es6-promise.auto.min.js",
+      "js/defaults.js",
+      "js/speech.js",
+      "js/document.js",
+      "js/googletr_tts.js",
+      "js/events.js"
+    ],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+R"
+      }
+    }
+  },
+
+  "tts_engine": {
+    "voices": [
+      {"voice_name":"Amazon US English (Joanna)","lang":"en-US","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Japanese (Mizuki)","lang":"ja-JP","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Turkish (Filiz)","lang":"tr-TR","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Swedish (Astrid)","lang":"sv-SE","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Russian (Maxim)","lang":"ru-RU","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Russian (Tatyana)","lang":"ru-RU","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Romanian (Carmen)","lang":"ro-RO","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Portuguese (Ines)","lang":"pt-PT","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Portuguese (Cristiano)","lang":"pt-PT","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Brazilian Portuguese (Vitoria)","lang":"pt-BR","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Brazilian Portuguese (Ricardo)","lang":"pt-BR","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Polish (Maja)","lang":"pl-PL","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Polish (Jan)","lang":"pl-PL","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Polish (Ewa)","lang":"pl-PL","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Dutch (Ruben)","lang":"nl-NL","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Dutch (Lotte)","lang":"nl-NL","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Norwegian (Liv)","lang":"nb-NO","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Italian (Giorgio)","lang":"it-IT","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Italian (Carla)","lang":"it-IT","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Icelandic (Karl)","lang":"is-IS","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Icelandic (Dora)","lang":"is-IS","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon French (Mathieu)","lang":"fr-FR","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon French (Celine)","lang":"fr-FR","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Canadian French (Chantal)","lang":"fr-CA","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon US Spanish (Penelope)","lang":"es-US","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon US Spanish (Miguel)","lang":"es-US","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Castilian Spanish (Enrique)","lang":"es-ES","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Castilian Spanish (Conchita)","lang":"es-ES","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Welsh English (Geraint)","lang":"en-GB-WLS","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon US English (Salli)","lang":"en-US","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon US English (Kimberly)","lang":"en-US","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon US English (Kendra)","lang":"en-US","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon US English (Justin)","lang":"en-US","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon US English (Joey)","lang":"en-US","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon US English (Ivy)","lang":"en-US","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Indian English (Raveena)","lang":"en-IN","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon British English (Emma)","lang":"en-GB","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon British English (Brian)","lang":"en-GB","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon British English (Amy)","lang":"en-GB","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Australian English (Russell)","lang":"en-AU","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Australian English (Nicole)","lang":"en-AU","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon German (Marlene)","lang":"de-DE","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon German (Hans)","lang":"de-DE","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Danish (Naja)","lang":"da-DK","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Danish (Mads)","lang":"da-DK","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Welsh (Gwyneth)","lang":"cy-GB","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon Polish (Jacek)","lang":"pl-PL","gender":"male","event_types":["start","end"]},
+
+      {"voice_name": "GoogleTranslate Afrikaans", "lang": "af", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Albanian", "lang": "sq", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Arabic", "lang": "ar", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Armenian", "lang": "hy", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Bengali", "lang": "bn", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Bosnian", "lang": "bs", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Catalan", "lang": "ca", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Chinese", "lang": "zh-CN", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Croatian", "lang": "hr", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Czech", "lang": "cs", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Danish", "lang": "da", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Dutch", "lang": "nl", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate English", "lang": "en", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Esperanto", "lang": "eo", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Finnish", "lang": "fi", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate French", "lang": "fr", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate German", "lang": "de", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Greek", "lang": "el", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Hindi", "lang": "hi", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Hungarian", "lang": "hu", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Icelandic", "lang": "is", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Indonesian", "lang": "id", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Italian", "lang": "it", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Japanese", "lang": "ja", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Khmer", "lang": "km", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Korean", "lang": "ko", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Latin", "lang": "la", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Latvian", "lang": "lv", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Macedonian", "lang": "mk", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Nepali", "lang": "ne", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Norwegian", "lang": "no", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Polish", "lang": "pl", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Portuguese", "lang": "pt", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Romanian", "lang": "ro", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Russian", "lang": "ru", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Serbian", "lang": "sr", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Sinhala", "lang": "si", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Slovak", "lang": "sk", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Spanish", "lang": "es", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Swahili", "lang": "sw", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Swedish", "lang": "sv", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Tamil", "lang": "ta", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Thai", "lang": "th", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Turkish", "lang": "tr", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Ukrainian", "lang": "uk", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Vietnamese", "lang": "vi", "event_types": ["start", "end"]},
+      {"voice_name": "GoogleTranslate Welsh", "lang": "cy", "event_types": ["start", "end"]}
+    ]
+  }
+}

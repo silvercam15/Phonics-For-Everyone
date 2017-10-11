@@ -1,0 +1,62 @@
+{
+  "extension_name": {
+    "message": "Đọc Cho Tôi Nghe"
+  },
+  "extension_short_name": {
+    "message": "Đọc Tui Nghe"
+  },
+  "extension_description": {
+    "message": "Đọc nghe nội dung trang web - tiếng Anh và Việt. Dùng nghe đọc tin tức, truyện online. Giọng đọc hay, tiện ích dễ xài."
+  },
+  "options_heading": {
+    "message": "Tùy Chọn"
+  },
+  "options_voice_label": {
+    "message": "Giọng đọc"
+  },
+  "options_rate_label": {
+    "message": "Tốc độ đọc"
+  },
+  "options_rate_explain": {
+    "message": "2 nghĩa là nhanh gấp hai lần, .5 nghĩa là chậm lại một nửa."
+  },
+  "options_pitch_label": {
+    "message": "Giọng cao/thấp"
+  },
+  "options_volume_label": {
+    "message": "Volume"
+  },
+  "options_show_highlighting": {
+    "message": "Highlight câu đang đọc"
+  },
+  "options_hotkey_label": {
+    "message": "Phím tắt"
+  },
+  "options_save_button": {
+    "message": "Lưu"
+  },
+  "options_reset_button": {
+    "message": "Reset"
+  },
+  "options_success_status": {
+    "message": "Đã lưu lại."
+  },
+  "context_read_selection": {
+    "message": "Đọc"
+  },
+  "context_read_here": {
+    "message": "Đọc từ chỗ này"
+  },
+  "error_no_voice": {
+    "message": "Không có giọng đọc cho ngôn ngữ này ({lang})"
+  },
+  "uploadpdf_message1": {
+    "message": "Tôi không có quyền đọc tệp cục bộ được lưu trữ trên máy tính của bạn."
+  },
+  "uploadpdf_message2": {
+    "message": "Nếu muốn, bạn có thể sử dụng mẫu dưới đây để tải tệp PDF của bạn lên máy chủ tạm thời để đọc."
+  },
+  "uploadpdf_submit_button": {
+    "message": "Tải lên & Mở"
+  }
+}

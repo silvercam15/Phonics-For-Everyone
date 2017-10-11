@@ -1,0 +1,62 @@
+{
+  "extension_name": {
+    "message": "Read Aloud: A Text to Speech Voice Reader"
+  },
+  "extension_short_name": {
+    "message": "Read Aloud"
+  },
+  "extension_description": {
+    "message": "Read out loud the current web-page article with one click. Supports 40+ languages."
+  },
+  "options_heading": {
+    "message": "Options"
+  },
+  "options_voice_label": {
+    "message": "Voice"
+  },
+  "options_rate_label": {
+    "message": "Speed"
+  },
+  "options_rate_explain": {
+    "message": ".5 is half speed, 2 is double speed."
+  },
+  "options_pitch_label": {
+    "message": "Pitch"
+  },
+  "options_volume_label": {
+    "message": "Volume"
+  },
+  "options_show_highlighting": {
+    "message": "Text Highlighting"
+  },
+  "options_hotkey_label": {
+    "message": "Shortcut"
+  },
+  "options_save_button": {
+    "message": "Save"
+  },
+  "options_reset_button": {
+    "message": "Reset"
+  },
+  "options_success_status": {
+    "message": "Changes saved."
+  },
+  "context_read_selection": {
+    "message": "Read aloud selected text"
+  },
+  "context_read_here": {
+    "message": "Read aloud starting from here"
+  },
+  "error_no_voice": {
+    "message": "No voice ({lang})"
+  },
+  "uploadpdf_message1": {
+    "message": "{extension_name} cannot access local files stored on your computer."
+  },
+  "uploadpdf_message2": {
+    "message": "If you wish, you can use the form below to upload your PDF file to {extension_name} server temporarily for reading. Your file will be removed from the server after you view it."
+  },
+  "uploadpdf_submit_button": {
+    "message": "Upload & Open"
+  }
+}

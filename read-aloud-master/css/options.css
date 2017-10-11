@@ -1,0 +1,36 @@
+
+.label {
+  color: red;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+.explain {
+  margin-top: 5px;
+  color: #888;
+  font-size: .9em;
+  padding: 10px;
+  background: #eee;
+  max-width: 350px;
+  border-radius: 5px;
+}
+.slider {
+  max-width: 250px;
+}
+.buttons {
+  margin-top: 20px;
+}
+#save {
+  font-weight: bold;
+}
+.status {
+  margin-left: 15px;
+  font-weight: bold;
+  display: none;
+}
+.status.success {
+  color: #080;
+}
+.status.error {
+  color: red;
+}

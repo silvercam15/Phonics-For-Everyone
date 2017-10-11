@@ -1,0 +1,62 @@
+{
+  "extension_name": {
+    "message": "Texto A Voz"
+  },
+  "extension_short_name": {
+    "message": "Texto A Voz"
+  },
+  "extension_description": {
+    "message": "Lea en voz alta el artículo actual con un solo clic."
+  },
+  "options_heading": {
+    "message": "Configuración"
+  },
+  "options_voice_label": {
+    "message": "Voz"
+  },
+  "options_rate_label": {
+    "message": "Velocidad"
+  },
+  "options_rate_explain": {
+    "message": ".5 es media velocidad, 2 es doble velocidad."
+  },
+  "options_pitch_label": {
+    "message": "Tono"
+  },
+  "options_volume_label": {
+    "message": "Volumen"
+  },
+  "options_show_highlighting": {
+    "message": "Resaltado De Texto"
+  },
+  "options_hotkey_label": {
+    "message": "Teclas De Atajo"
+  },
+  "options_save_button": {
+    "message": "Guardar"
+  },
+  "options_reset_button": {
+    "message": "Reiniciar"
+  },
+  "options_success_status": {
+    "message": "Cambios guardados."
+  },
+  "context_read_selection": {
+    "message": "Leer en voz alta el texto seleccionado"
+  },
+  "context_read_here": {
+    "message": "Leer en voz alta desde aquí"
+  },
+  "error_no_voice": {
+    "message": "Sin voz ({lang})"
+  },
+  "uploadpdf_message1": {
+    "message": "No tengo permiso para leer archivos locales almacenados en su computadora."
+  },
+  "uploadpdf_message2": {
+    "message": "Si lo desea, puede utilizar el siguiente formulario para cargar su archivo PDF en el servidor de {extension_name} temporalmente para su lectura."
+  },
+  "uploadpdf_submit_button": {
+    "message": "Subir y Abrir"
+  }
+}
