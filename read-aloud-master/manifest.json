@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
 
-  "name": "__MSG_extension_name__",
-  "short_name": "__MSG_extension_short_name__",
-  "description": "__MSG_extension_description__",
-  "version": "0.2.16",
+  "name": "Phonics For Everyone",
+  "short_name": "Phonics",
+  "description": "Provides phonetical pronunciation of text on a webpage.",
+  "version": "0.0.1",
   "default_locale": "en",
 
   "browser_action": {
