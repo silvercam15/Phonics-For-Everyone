@@ -30,6 +30,7 @@ $(function() {
         .prop("selected", voice.voiceName == settings.voiceName)
         .appendTo($("#voices"));
     });
+    $("<option>").val("Phonetic").text("Phonetic").prop("selected", "Phonetic"==settings.voiceName).appendTo($("#voices"));
     $("#rate").slider("value", Math.log(settings.rate || defaults.rate) / Math.log($("#rate").data("pow")));
     $("#pitch").slider("value", settings.pitch || defaults.pitch);
     $("#volume").slider("value", settings.volume || defaults.volume);
