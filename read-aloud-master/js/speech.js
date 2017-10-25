@@ -16,13 +16,11 @@ function Speech(texts, options) {
   var hackTimer = 0;
 
   if (isAmazonPolly(options.voiceName) || isGoogleTranslate(options.voiceName)) {
-    var speed = 200;
     var speed = (options.playPhonetic) ? 1 : 200;
     texts = texts.map(function(text) {return new CharBreaker().breakText(text, speed, punctuator)})
     options.hack = false;
   }
   else if (isGoogleNative(options.voiceName)) {
-    var speed = options.spchletMaxLen*options.rate;
     var speed  = (options.playPhonetic) ? 1 : options.spchletMaxLen*options.rate;
     texts = texts.map(function(text) {return new WordBreaker().breakText(text, speed, punctuator)});
     options.hack = true;
