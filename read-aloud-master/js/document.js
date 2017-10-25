@@ -193,6 +193,7 @@ function Doc(source, onEnd) {
           rate: settings.rate || defaults.rate,
           pitch: settings.pitch || defaults.pitch,
           volume: settings.volume || defaults.volume,
+          playPhonetic: settings.playPhonetic,
           lang: info.lang,
         }
         return getSpeechVoice(settings.voiceName, options.lang)
