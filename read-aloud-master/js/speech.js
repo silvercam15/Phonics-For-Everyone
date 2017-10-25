@@ -16,17 +16,20 @@ function Speech(texts, options) {
   var hackTimer = 0;
 
   if (isAmazonPolly(options.voiceName) || isGoogleTranslate(options.voiceName)) {
-    texts = texts.map(function(text) {return new CharBreaker().breakText(text, 200, punctuator)})
+    var speed = (options.playPhonetic) ? 0 : 200;
+    texts = texts.map(function(text) {return new CharBreaker().breakText(text, speed, punctuator)})
     options.hack = false;
   }
   else if (isGoogleNative(options.voiceName)) {
-    texts = texts.map(function(text) {return new WordBreaker().breakText(text, options.spchletMaxLen*options.rate, punctuator)});
+    var speed  = (options.playPhonetic) ? 0 : options.spchletMaxLen*options.rate;
+    texts = texts.map(function(text) {return new WordBreaker().breakText(text, speed, punctuator)});
     options.hack = true;
-  }
+  }/*
   else if (isPhoneticVoice(options.voiceName)) {
+
     texts = texts.map(function(text) {return new WordBreaker().breakText(text, 1, punctuator)});
     options.hack = true;
-  }
+  }*/
   else {
     texts = texts.map(function(text) {return [text]});
     options.hack = false;

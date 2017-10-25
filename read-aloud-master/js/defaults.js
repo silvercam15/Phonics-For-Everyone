@@ -65,10 +65,6 @@ function isRemoteVoice(voiceName) {
   return isAmazonPolly(voiceName) || isGoogleTranslate(voiceName);
 }
 
-function isPhoneticVoice(voiceName) {
-  return voiceName == "Phonetic";
-}
-
 function executeFile(file) {
   return new Promise(function(fulfill, reject) {
     chrome.runtime.lastError = null;

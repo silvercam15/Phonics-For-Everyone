@@ -30,12 +30,15 @@ $(function() {
         .prop("selected", voice.voiceName == settings.voiceName)
         .appendTo($("#voices"));
     });
-    $("<option>").val("Phonetic").text("Phonetic").prop("selected", "Phonetic"==settings.voiceName).appendTo($("#voices"));
+    //$("<option>").val("Phonetic").text("Phonetic").prop("selected", "Phonetic"==settings.voiceName).appendTo($("#voices"));
     $("#rate").slider("value", Math.log(settings.rate || defaults.rate) / Math.log($("#rate").data("pow")));
     $("#pitch").slider("value", settings.pitch || defaults.pitch);
     $("#volume").slider("value", settings.volume || defaults.volume);
     $("[name=highlighting]").prop("checked", false);
     $("[name=highlighting][value=" + (settings.showHighlighting != null ? settings.showHighlighting : defaults.showHighlighting) + "]").prop("checked", true);
+    $("[name=phonetic]").prop("checked", false);
+    $("[name=phonetic][value=" + (settings.playPhonetic != null ? settings.playPhonetic : defaults.playPhonetic) + "]").prop("checked", true);
+
   }));
 
   $("#save").click(function() {
@@ -45,6 +48,7 @@ $(function() {
       pitch: $("#pitch").slider("value"),
       volume: $("#volume").slider("value"),
       showHighlighting: Number($("[name=highlighting]:checked").val()),
+      playPhonetic: Number($("[name=phonetic]:checked").val()),
     })
     .then(function() {
       $(".status.success").show().delay(3000).fadeOut();
