@@ -16,20 +16,15 @@ function Speech(texts, options) {
   var hackTimer = 0;
 
   if (isAmazonPolly(options.voiceName) || isGoogleTranslate(options.voiceName)) {
-    var speed = (options.playPhonetic) ? 0 : 200;
+    var speed = (options.playPhonetic) ? 1 : 200;
     texts = texts.map(function(text) {return new CharBreaker().breakText(text, speed, punctuator)})
     options.hack = false;
   }
   else if (isGoogleNative(options.voiceName)) {
-    var speed  = (options.playPhonetic) ? 0 : options.spchletMaxLen*options.rate;
+    var speed  = (options.playPhonetic) ? 1 : options.spchletMaxLen*options.rate;
     texts = texts.map(function(text) {return new WordBreaker().breakText(text, speed, punctuator)});
     options.hack = true;
-  }/*
-  else if (isPhoneticVoice(options.voiceName)) {
-
-    texts = texts.map(function(text) {return new WordBreaker().breakText(text, 1, punctuator)});
-    options.hack = true;
-  }*/
+  }
   else {
     texts = texts.map(function(text) {return [text]});
     options.hack = false;

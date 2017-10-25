@@ -7,11 +7,12 @@ var defaults = {
   pitch: 1.0,
   volume: 1.0,
   showHighlighting: 0,
+  playPhonetic: 1,
 };
 
 function getSettings() {
   return new Promise(function(fulfill) {
-    chrome.storage.local.get(["voiceName", "rate", "pitch", "volume", "showHighlighting"], fulfill);
+    chrome.storage.local.get(["voiceName", "rate", "pitch", "volume", "showHighlighting", "playPhonetic"], fulfill);
   });
 }
 
