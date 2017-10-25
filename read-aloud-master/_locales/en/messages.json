@@ -29,6 +29,9 @@
   "options_show_highlighting": {
     "message": "Text Highlighting"
   },
+  "options_phonetic": {
+    "message": "Play Text Phonetically"
+  },
   "options_hotkey_label": {
     "message": "Shortcut"
   },
