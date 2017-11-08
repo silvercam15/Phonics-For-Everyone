@@ -8,5 +8,7 @@ Download the extension from the Google Play store available here:
 [INSERT LINK]
 
 Silvia Camara [@silvercam15](https://github.com/silvercam15)
+
 Roann Yanes [@yanesroann](https://github.com/yanesroann)
+
 Troy prince [@tprince232](https://github.com/tprince232)
