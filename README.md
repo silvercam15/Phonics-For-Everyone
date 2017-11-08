@@ -7,6 +7,8 @@ This chrome extension serves as an accessibility tool for learning to read or fo
 Download the extension from the Google Play store available here: 
 [INSERT LINK]
 
+# Collaborators
+
 Silvia Camara [@silvercam15](https://github.com/silvercam15)
 
 Roann Yanes [@yanesroann](https://github.com/yanesroann)
