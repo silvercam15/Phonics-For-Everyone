@@ -3,7 +3,7 @@
 
   "name": "Phonics For Everyone",
   "short_name": "Phonics",
-  "description": "Provides phonetical pronunciation of text on a webpage.",
+  "description": "Provides phonetic pronunciation of text on a webpage.",
   "version": "0.0.1",
   "default_locale": "en",
 
@@ -50,8 +50,8 @@
 
   "tts_engine": {
     "voices": [
-      {"voice_name":"Amazon US English (Joanna)","lang":"en-US","gender":"female","event_types":["start","end"]},
-      {"voice_name":"Amazon Japanese (Mizuki)","lang":"ja-JP","gender":"female","event_types":["start","end"]},
+      {"voice_name":"Amazon US English (Joanna)","lang":"en-US","gender":"female","event_types":["start","end"]}
+      /*{"voice_name":"Amazon Japanese (Mizuki)","lang":"ja-JP","gender":"female","event_types":["start","end"]},
       {"voice_name":"Amazon Turkish (Filiz)","lang":"tr-TR","gender":"female","event_types":["start","end"]},
       {"voice_name":"Amazon Swedish (Astrid)","lang":"sv-SE","gender":"female","event_types":["start","end"]},
       {"voice_name":"Amazon Russian (Maxim)","lang":"ru-RU","gender":"male","event_types":["start","end"]},
@@ -96,9 +96,9 @@
       {"voice_name":"Amazon Danish (Naja)","lang":"da-DK","gender":"female","event_types":["start","end"]},
       {"voice_name":"Amazon Danish (Mads)","lang":"da-DK","gender":"male","event_types":["start","end"]},
       {"voice_name":"Amazon Welsh (Gwyneth)","lang":"cy-GB","gender":"female","event_types":["start","end"]},
-      {"voice_name":"Amazon Polish (Jacek)","lang":"pl-PL","gender":"male","event_types":["start","end"]},
+      {"voice_name":"Amazon Polish (Jacek)","lang":"pl-PL","gender":"male","event_types":["start","end"]},*/
 
-      {"voice_name": "GoogleTranslate Afrikaans", "lang": "af", "event_types": ["start", "end"]},
+      /*{"voice_name": "GoogleTranslate Afrikaans", "lang": "af", "event_types": ["start", "end"]},
       {"voice_name": "GoogleTranslate Albanian", "lang": "sq", "event_types": ["start", "end"]},
       {"voice_name": "GoogleTranslate Arabic", "lang": "ar", "event_types": ["start", "end"]},
       {"voice_name": "GoogleTranslate Armenian", "lang": "hy", "event_types": ["start", "end"]},
@@ -144,7 +144,7 @@
       {"voice_name": "GoogleTranslate Turkish", "lang": "tr", "event_types": ["start", "end"]},
       {"voice_name": "GoogleTranslate Ukrainian", "lang": "uk", "event_types": ["start", "end"]},
       {"voice_name": "GoogleTranslate Vietnamese", "lang": "vi", "event_types": ["start", "end"]},
-      {"voice_name": "GoogleTranslate Welsh", "lang": "cy", "event_types": ["start", "end"]}
+      {"voice_name": "GoogleTranslate Welsh", "lang": "cy", "event_types": ["start", "end"]}*/
     ]
   }
 }
