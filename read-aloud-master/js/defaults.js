@@ -1,5 +1,6 @@
 var config = {
-  serviceUrl: "https://support.lsdsoftware.com"
+  //TODO
+  serviceUrl: "https://make-new-url.com"
 }
 
 var defaults = {

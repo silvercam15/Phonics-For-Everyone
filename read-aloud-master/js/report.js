@@ -11,7 +11,9 @@ function submit() {
     .then(spread(function(master, settings) {
       var url = $("#txt-url").val();
       var comment = $("#txt-comment").val();
-      return master.reportIssue(url + "\n" + JSON.stringify(settings), comment);
+      //TODO: actual reporting disabled b/c there is no server
+      //return master.reportIssue(url + "\n" + JSON.stringify(settings), comment);
+      return null
     }))
     .then(function() {
       $("#img-spinner").hide();
@@ -19,6 +21,6 @@ function submit() {
     })
     .catch(function() {
       $("#img-spinner").hide();
-      $("#lbl-status").text("Server could not be contacted, please email me directly at hai.phan@gmail.com. Thank you!").toggleClass("error", true);
+      $("#lbl-status").text("Server could not be contacted, please email me directly at ryanes@nd.edu. Thank you!").toggleClass("error", true);
     })
 }
