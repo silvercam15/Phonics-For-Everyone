@@ -24,11 +24,14 @@ $(function() {
       }
     });
     voices.forEach(function(voice) {
-      $("<option>")
-        .val(voice.voiceName)
-        .text(voice.voiceName)
-        .prop("selected", voice.voiceName == settings.voiceName)
-        .appendTo($("#voices"));
+      console.log(voice.voiceName);
+      if(isGoogleNative(voice.voiceName)) {
+          $("<option>")
+              .val(voice.voiceName)
+              .text(voice.voiceName)
+              .prop("selected", voice.voiceName == settings.voiceName)
+              .appendTo($("#voices"));
+      }
     });
     //$("<option>").val("Phonetic").text("Phonetic").prop("selected", "Phonetic"==settings.voiceName).appendTo($("#voices"));
     $("#rate").slider("value", Math.log(settings.rate || defaults.rate) / Math.log($("#rate").data("pow")));
